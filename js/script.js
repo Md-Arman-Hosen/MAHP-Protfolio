@@ -55,7 +55,8 @@ const SetHomeContainer = () =>{
 }
 
 SetHomeContainer();
-
+  
+//about section
 const SetAboutContainer = () => {
     const aboutContainer = document.getElementById('about-container');
     const aboutCard = document.createElement ('div');
@@ -78,10 +79,89 @@ const SetAboutContainer = () => {
                     technologies. I love building web applications that are not only functional but also beautiful and
                     engaging.</p>
                 <a href="#" class="btn md:btn-md lg:btn-lg btn-accent text-white text-2xl">Read more</a>
-                <!-- btn-xs sm:btn-sm -->
             </div>`;
 
             aboutContainer.appendChild(aboutCard);
 
 }
 SetAboutContainer();
+
+// Project Section
+const setProjectContainer = () =>{
+    const projectContainer = document.getElementById('project-container');
+    projectCard = document.createElement ('div');
+    projectCard.innerHTML=`     
+    
+    <h2 class="heading"> My <span>project</span></h2>
+
+        <div class="project_container">
+            <div class="project_box">
+                <i class="bx bx-store"></i>
+                <h3>Influencer Products</h3>
+                <p>Tech products for buy.A simple interactive Web-Site. Fully Responsive And userFriendly.It is very
+                    Simple Project and Anyone Can use it.</p>
+                <a href="https://md-arman-hosen.github.io/influncer-gear/"
+                    class="btn sm:btn-sm md:btn-md lg:btn-lg btn-accent text-white text-2xl">Project Live Link</a>
+            </div>
+
+            <div class="project_box">
+                <i class="bx bx-injection"></i>
+                <h3>Covid 19</h3>
+                <p>A simple interactive Web-Site where all info about covid 19 is given. Fully Responsive And
+                    userFriendly, Made by Scss</p>
+                <a href="https://md-arman-hosen.github.io/covid19/"
+                    class="btn  sm:btn-sm md:btn-md lg:btn-lg btn-accent text-white text-2xl">Project Live Link</a>
+            </div>
+
+            <div class="project_box">
+                <i class="bx bx-bus"></i>
+                <h3>Bus Ticket System</h3>
+                <p>A simple Project created by using Javascript. Where anyone can Buy ticket online in a very simple an
+                    d easy ways.
+                    Fully Responsive project
+                </p>
+                <a href="https://arman-ticket-system.netlify.app/"
+                    class="btn md:btn-md lg:btn-lg btn-accent text-white text-2xl">Project Live Link</a>
+            </div>
+        </div>`;
+    projectContainer.appendChild(projectCard);
+}
+setProjectContainer();
+
+// Contact Section
+const setContactContainer = () =>{
+    const contactContainer = document.getElementById('contact-container');
+    contactCard = document.createElement ('div');
+    contactCard.innerHTML=`      
+    
+    <h2 class="heading"> <span>Contact</span></h2>
+
+        <div>
+            <h2 class="text-5xl mb-10 text-center"><strong>Contact with me By messege here!</strong></h2>
+            <form>
+                <input class="block input-place text-3xl text-black" type="Text" name="Name" id=""
+                    placeholder="Input You Name">
+                <input class="block input-place text-3xl text-black" type="email" name="" id=""
+                    placeholder="Input your Email Address">
+                <input class="block input-place text-3xl text-black" type="Text" name="text" id=""
+                    placeholder=" Enter your message">
+                <button class="btn md:btn-md lg:btn-lg btn-accent text-white text-2xl" type="submit">Submit</button>   
+            </form>
+        </div>`;
+    contactContainer.appendChild(contactCard);
+}
+setContactContainer();
+
+
+// footer Section
+const setFooterContainer = () =>{
+    const footerContainer = document.getElementById('footer-container');
+    footerCard = document.createElement ('div');
+    footerCard.classList = `h-32 footer footer-center bg-base-300 text-base-content p-4`;
+    footerCard.innerHTML=`      
+            <aside>
+                <p class="text-3xl">Copyright © 2024 - All right reserved by MAHP Industries Ltd</p>
+            </aside>`;
+    footerContainer.appendChild(footerCard);
+}
+setFooterContainer();
